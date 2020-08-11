@@ -1,11 +1,14 @@
-<%= form_with model: @task, class: "task_form" do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+<div class="container">
+  <%= form_with model: @task, class: "task_form" do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
 
-  <%= f.label :details %>
-  <%= f.text_field :details %>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
 
-  <%= f.label :completed %>
-  <%= f.check_box :completed %>
-  <%= f.submit "Create" %>
-<% end %>
+    <%= f.label :completed %>
+    <%= f.check_box :completed %>
+    <%= f.submit "Create" %>
+  <% end %>
+</div>
+
